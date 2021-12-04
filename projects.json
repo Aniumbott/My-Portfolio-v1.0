@@ -1,50 +1,60 @@
 {
   "ongoing": {
     "ChatUp": {
-      "url": "https://github.com/Aniumbott/ChatUp",
-      "dec": "A servers based Chat app using React."
+      "github-repo": "https://github.com/Aniumbott/ChatUp",
+      "dec": "A servers based Chat app using React.",
+      "url": "https://chatup-web.herokuapp.com/"
     }
   },
   "done": {
     "My Portfolio v1.0": {
-      "url": "",
-      "dec": "A simple website to showcase myself."
+      "github-repo": "",
+      "dec": "A simple website to showcase myself.",
+      "url": ""
     },
     "Vybe": {
-      "url": "https://github.com/Aniumbott/Vybe",
-      "dec": "Its a simple online music player using React.JS"
+      "github-repo": "https://github.com/Aniumbott/Vybe",
+      "dec": "Its a simple online music player using React.JS",
+      "url": "https://vybe-a-music-player.herokuapp.com/"
     },
     "BySun": {
-      "url": "https://github.com/Aniumbott/BySun",
+      "github-repo": "https://github.com/Aniumbott/BySun",
       "dec": "A simple and quick weather widget as a Chrome Extension."
     },
     "Wallpep": {
-      "url": "https://github.com/Aniumbott/Wallpep",
-      "dec": "Its a place to find a wallpaper of your need."
+      "github-repo": "https://github.com/Aniumbott/Wallpep",
+      "dec": "Its a place to find a wallpaper of your need.",
+      "url": "https://aniumbott.github.io/Wallpep/"
     },
     "Rangeen": {
-      "url": "https://github.com/Aniumbott/Rangeen",
-      "dec": "Its a WebApp to generate color palettes."
+      "github-repo": "https://github.com/Aniumbott/Rangeen",
+      "dec": "Its a WebApp to generate color palettes.",
+      "url": "https://aniumbott.github.io/Rangeen/"
     },
     "SHOWDOWN": {
-      "url": "https://github.com/Aniumbott/SHOWDOWN",
-      "dec": "A clone of Disney+ UI using simple HTML/CSS and JS."
+      "github-repo": "https://github.com/Aniumbott/SHOWDOWN",
+      "dec": "A clone of Disney+ UI using simple HTML/CSS and JS.",
+      "url": "https://aniumbott.github.io/SHOWDOWN/"
     },
     "Beatsboi": {
-      "url": "https://github.com/Aniumbott/Beatsboi",
-      "dec": "Its a WebApp to show your DJ skils."
+      "github-repo": "https://github.com/Aniumbott/Beatsboi",
+      "dec": "Its a WebApp to show your DJ skils.",
+      "url": "https://aniumbott.github.io/Beatsboi/"
     },
     "Todo-List": {
-      "url": "https://github.com/Aniumbott/Todo-List",
-      "dec": "It is a simple To-Do list page which is helpful to mannage bunch of tasks."
+      "github-repo": "https://github.com/Aniumbott/Todo-List",
+      "dec": "It is a simple To-Do list page which is helpful to mannage bunch of tasks.",
+      "url": "https://aniumbott.github.io/Todo-List/"
     },
     "Florum": {
-      "url": "https://github.com/Aniumbott/Florum-A_Flower_Gallery",
-      "dec": "It is a mindly-pleasing Flower Gallery."
+      "github-repo": "https://github.com/Aniumbott/Florum-A_Flower_Gallery",
+      "dec": "It is a mindly-pleasing Flower Gallery.",
+      "url": "https://aniumbott.github.io/Florum-A_Flower_Gallery/"
     },
     "Travely": {
-      "url": "https://github.com/Aniumbott/Travely",
-      "dec": "It is a simple one page website of a travel agency named Travely (imaginary of course) using HTML and CSS only."
+      "github-repo": "https://github.com/Aniumbott/Travely",
+      "dec": "It is a simple one page website of a travel agency named Travely (imaginary of course) using HTML and CSS only.",
+      "url": "https://aniumbott.github.io/Travely/#locations"
     }
   }
 }
