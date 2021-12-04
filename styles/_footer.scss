@@ -1,0 +1,22 @@
+footer {
+  background: #000000;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  @include flex(space-between, center, row);
+  svg {
+    margin: 0 5rem;
+    height: 3rem;
+    path {
+      fill: #ffffff;
+    }
+  }
+  ul {
+    flex: 1 1 40rem;
+    @include flex(flex-end, center, row);
+  }
+  h4 {
+    color: $color5;
+    flex: 1 1 40rem;
+  }
+}

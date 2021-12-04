@@ -1,0 +1,92 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "saira";
+  src: url("../fonts/Saira.ttf");
+}
+
+@font-face {
+  font-family: "robodron";
+  src: url("../fonts/Robodron.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background: $color1;
+  font-family: "saira", sans-serif;
+  color: $color5;
+  overflow-x: hidden;
+}
+
+header {
+  min-width: 100vw;
+  padding-bottom: 0.6rem;
+  border-bottom: solid 0.4rem $color3;
+  animation: "nav-border" 2s ease infinite;
+}
+
+@keyframes nav-border {
+  0% {
+    border-bottom: solid 0.6rem $color3;
+  }
+  50% {
+    border-bottom: solid 0.6rem $color5;
+  }
+  100% {
+    border-bottom: solid 0.6rem $color3;
+  }
+}
+
+h1 {
+  font-size: $header1;
+}
+li,
+button,
+label,
+input,
+a,
+p {
+  font-size: $text;
+}
+h2 {
+  font-size: $header2;
+}
+h3 {
+  font-size: $header3;
+}
+h4,
+h5 {
+  font-size: $header4;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $color3;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7a7a7a83;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b383;
+}

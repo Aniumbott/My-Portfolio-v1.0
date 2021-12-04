@@ -1,0 +1,121 @@
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  .logo {
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    img {
+      height: 5rem;
+      border-radius: 50%;
+    }
+    h1 {
+      color: $color5;
+      margin: 2rem;
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+  ul {
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+    a:hover {
+      color: $color4;
+    }
+  }
+}
+
+.intro {
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, center, row);
+  h3 {
+    font-family: "robodron";
+    color: $color4;
+    font-size: 4rem;
+    padding: 1rem 0rem;
+  }
+  p {
+    font-size: 2rem;
+    padding-top: 0rem;
+    color: $color5;
+  }
+}
+
+.intro-images {
+  @include flex(center, center, row);
+  svg {
+    margin-left: 20%;
+    height: 70%;
+  }
+}
+
+.active {
+  background: $color2;
+  color: $color5;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  &:hover {
+    color: $color5;
+  }
+}
+
+.intro-text {
+  margin-bottom: 10%;
+  @include flex(flex-start, flex-start, column);
+  flex: 1 1 40rem;
+}
+
+#glass {
+  animation: "glass-color" 2s ease infinite;
+}
+
+#pc-logo {
+  animation: "pc-logo" 1s linear infinite;
+}
+
+#prs {
+  &:hover {
+    fill: $color1;
+  }
+}
+
+@keyframes glass-color {
+  0% {
+    fill: #4285f4;
+  }
+  25% {
+    fill: #34a853;
+  }
+  50% {
+    fill: #fbbc05;
+  }
+  75% {
+    fill: #ea4335;
+  }
+  100% {
+    fill: #4285f4;
+  }
+}
+
+@keyframes pc-logo {
+  0% {
+    fill: $color3;
+  }
+  50% {
+    fill: $color5;
+  }
+  100% {
+    fill: $color3;
+  }
+}

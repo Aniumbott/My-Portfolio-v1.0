@@ -1,0 +1,50 @@
+{
+  "ongoing": {
+    "ChatUp": {
+      "url": "https://github.com/Aniumbott/ChatUp",
+      "dec": "A servers based Chat app using React."
+    }
+  },
+  "done": {
+    "My Portfolio v1.0": {
+      "url": "",
+      "dec": "A simple website to showcase myself."
+    },
+    "Vybe": {
+      "url": "https://github.com/Aniumbott/Vybe",
+      "dec": "Its a simple online music player using React.JS"
+    },
+    "BySun": {
+      "url": "https://github.com/Aniumbott/BySun",
+      "dec": "A simple and quick weather widget as a Chrome Extension."
+    },
+    "Wallpep": {
+      "url": "https://github.com/Aniumbott/Wallpep",
+      "dec": "Its a place to find a wallpaper of your need."
+    },
+    "Rangeen": {
+      "url": "https://github.com/Aniumbott/Rangeen",
+      "dec": "Its a WebApp to generate color palettes."
+    },
+    "SHOWDOWN": {
+      "url": "https://github.com/Aniumbott/SHOWDOWN",
+      "dec": "A clone of Disney+ UI using simple HTML/CSS and JS."
+    },
+    "Beatsboi": {
+      "url": "https://github.com/Aniumbott/Beatsboi",
+      "dec": "Its a WebApp to show your DJ skils."
+    },
+    "Todo-List": {
+      "url": "https://github.com/Aniumbott/Todo-List",
+      "dec": "It is a simple To-Do list page which is helpful to mannage bunch of tasks."
+    },
+    "Florum": {
+      "url": "https://github.com/Aniumbott/Florum-A_Flower_Gallery",
+      "dec": "It is a mindly-pleasing Flower Gallery."
+    },
+    "Travely": {
+      "url": "https://github.com/Aniumbott/Travely",
+      "dec": "It is a simple one page website of a travel agency named Travely (imaginary of course) using HTML and CSS only."
+    }
+  }
+}
