@@ -1,16 +1,45 @@
-.projects {
+.all-projects {
+  margin: 2rem auto;
   width: 90%;
-  margin: auto;
-  min-height: 90vh;
-  @include flex(space-around, center, column);
-  text-align: center;
-  flex-wrap: wrap;
-  h2 {
-    margin: 5rem;
+  @include flex(center, flex-start, column);
+  .ongoing,
+  .done {
+    @include flex(center, flex-start, column);
+    h1 {
+      color: $color3;
+    }
   }
-}
-
-.travelly,
-.elena {
-  flex: 1 1 40rem;
+  .projects {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .project-card {
+      height: 18rem;
+      width: 32rem;
+      border-radius: 8px;
+      margin: 1rem;
+      overflow: hidden;
+      position: relative;
+      .project-cover {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: #111111ee;
+        opacity: 0;
+        transition: all 0.3s ease;
+        @include flex(center, center, row);
+        color: $color2;
+        &:hover {
+          opacity: 1;
+        }
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        box-shadow: 0px 0px 20px 0.5px $color2;
+      }
+    }
+  }
 }

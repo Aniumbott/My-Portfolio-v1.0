@@ -111,36 +111,100 @@ a {
   background: #b3b3b383;
 }
 
-.projects {
+.all-projects {
+  margin: 2rem auto;
   width: 90%;
-  margin: auto;
-  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.projects h2 {
-  margin: 5rem;
+.all-projects .ongoing,
+.all-projects .done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.travelly,
-.elena {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+.all-projects .ongoing h1,
+.all-projects .done h1 {
+  color: #64dfdf;
+}
+
+.all-projects .projects {
+  margin: 1rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.all-projects .projects .project-card {
+  height: 18rem;
+  width: 32rem;
+  border-radius: 8px;
+  margin: 1rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.all-projects .projects .project-card .project-cover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #111111ee;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #6930c3;
+}
+
+.all-projects .projects .project-card .project-cover:hover {
+  opacity: 1;
+}
+
+.all-projects .projects .project-card img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.all-projects .projects .project-card:hover {
+  -webkit-box-shadow: 0px 0px 20px 0.5px #6930c3;
+          box-shadow: 0px 0px 20px 0.5px #6930c3;
 }
 
 .form-section {
