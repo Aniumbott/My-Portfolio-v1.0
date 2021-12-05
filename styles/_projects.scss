@@ -12,7 +12,9 @@
   .projects {
     margin: 1rem auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    @include flex(flex-start, center, row);
+    flex-wrap: wrap;
     .project-card {
       height: 18rem;
       width: 32rem;
@@ -20,6 +22,7 @@
       margin: 1rem;
       overflow: hidden;
       position: relative;
+      box-shadow: 0px 0px 10px 0.5px #111111ee;
       .project-cover {
         height: 100%;
         width: 100%;
@@ -39,6 +42,91 @@
       }
       &:hover {
         box-shadow: 0px 0px 20px 0.5px $color2;
+      }
+    }
+  }
+}
+
+.details-popup-container {
+  @include flex(center, center, row);
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 20vh 0;
+  z-index: 10;
+  background: #111111ee;
+  .details-popup {
+    height: 100%;
+    padding: 2rem;
+    margin: 2rem;
+    background: $color1;
+    border-radius: 20px;
+    @include flex(space-around, flex-start, row);
+    position: relative;
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 4rem;
+      width: 4rem;
+      font-size: 4rem;
+      margin: 1rem;
+      color: $color5;
+      background: transparent;
+      cursor: pointer;
+      &:hover {
+        color: #ff2222;
+      }
+    }
+    #details-screenshot {
+      margin-top: 4rem;
+      max-height: 80%;
+      max-width: 50%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0.5px #111111ee;
+    }
+    .details {
+      height: 60%;
+      width: 50%;
+      max-width: 50%;
+      margin: 0 2rem;
+      margin-top: 4rem;
+      position: relative;
+      @include flex(flex-start, flex-start, column);
+      padding: 0rem 1rem;
+      h1 {
+        font-size: 4rem;
+        color: $color3;
+      }
+      p {
+        margin: 0.5rem 0;
+        font-size: 1.6rem;
+      }
+      .buttons-container {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 4rem;
+        @include flex(center, center, row);
+        a {
+          margin-left: 2rem;
+          padding: 0.5rem;
+          background: $color5;
+          border-radius: 50%;
+          overflow: hidden;
+          height: 100%;
+          @include flex(center, center, row);
+          transition: all 0.3s ease;
+          img {
+            pointer-events: none;
+            height: 100%;
+            object-fit: cover;
+          }
+          &:hover {
+            background: $color3;
+          }
+        }
       }
     }
   }

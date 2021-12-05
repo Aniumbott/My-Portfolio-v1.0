@@ -27,12 +27,12 @@
       width: 30%;
       padding: 2rem;
       background: $color5;
-      color: #ffffff;
+      color: $color2;
       border: none;
       border-radius: 10px;
       transition: all 0.3s ease;
       &:hover {
-        background: $color3;
+        background: $color2;
         color: $color5;
       }
     }

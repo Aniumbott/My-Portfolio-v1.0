@@ -69,6 +69,7 @@ label,
 input,
 a,
 p {
+  border: none;
   font-size: 2.5rem;
 }
 
@@ -155,8 +156,22 @@ a {
   margin: 1rem auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .all-projects .projects .project-card {
@@ -166,6 +181,8 @@ a {
   margin: 1rem;
   overflow: hidden;
   position: relative;
+  -webkit-box-shadow: 0px 0px 10px 0.5px #111111ee;
+          box-shadow: 0px 0px 10px 0.5px #111111ee;
 }
 
 .all-projects .projects .project-card .project-cover {
@@ -205,6 +222,164 @@ a {
 .all-projects .projects .project-card:hover {
   -webkit-box-shadow: 0px 0px 20px 0.5px #6930c3;
           box-shadow: 0px 0px 20px 0.5px #6930c3;
+}
+
+.details-popup-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  padding: 20vh 0;
+  z-index: 10;
+  background: #111111ee;
+}
+
+.details-popup-container .details-popup {
+  height: 100%;
+  padding: 2rem;
+  margin: 2rem;
+  background: #252525;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.details-popup-container .details-popup button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4rem;
+  width: 4rem;
+  font-size: 4rem;
+  margin: 1rem;
+  color: #e1e1e1;
+  background: transparent;
+  cursor: pointer;
+}
+
+.details-popup-container .details-popup button:hover {
+  color: #ff2222;
+}
+
+.details-popup-container .details-popup #details-screenshot {
+  margin-top: 4rem;
+  max-height: 80%;
+  max-width: 50%;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 0.5px #111111ee;
+          box-shadow: 0px 0px 10px 0.5px #111111ee;
+}
+
+.details-popup-container .details-popup .details {
+  height: 60%;
+  width: 50%;
+  max-width: 50%;
+  margin: 0 2rem;
+  margin-top: 4rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0rem 1rem;
+}
+
+.details-popup-container .details-popup .details h1 {
+  font-size: 4rem;
+  color: #64dfdf;
+}
+
+.details-popup-container .details-popup .details p {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.details-popup-container .details-popup .details .buttons-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.details-popup-container .details-popup .details .buttons-container a {
+  margin-left: 2rem;
+  padding: 0.5rem;
+  background: #e1e1e1;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.details-popup-container .details-popup .details .buttons-container a img {
+  pointer-events: none;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.details-popup-container .details-popup .details .buttons-container a:hover {
+  background: #64dfdf;
 }
 
 .form-section {
@@ -267,7 +442,7 @@ a {
   width: 30%;
   padding: 2rem;
   background: #e1e1e1;
-  color: #ffffff;
+  color: #6930c3;
   border: none;
   border-radius: 10px;
   -webkit-transition: all 0.3s ease;
@@ -275,11 +450,12 @@ a {
 }
 
 .form-section form button:hover {
-  background: #64dfdf;
+  background: #6930c3;
   color: #e1e1e1;
 }
 
 footer {
+  width: 100%;
   background: #000000;
   color: white;
   min-height: 10vh;
@@ -579,7 +755,7 @@ nav ul a:hover {
   }
 }
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 1080px) {
   html {
     font-size: 53%;
   }
@@ -592,11 +768,47 @@ nav ul a:hover {
   nav {
     width: 100%;
   }
+  .details-popup-container {
+    padding: 0;
+    padding-top: 10vh;
+  }
+  .details-popup-container .details-popup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: auto;
+  }
+  .details-popup-container .details-popup #details-screenshot {
+    margin: 3rem 0;
+    max-width: 100%;
+  }
+  .details-popup-container .details-popup .details {
+    width: 100%;
+    max-width: 100%;
+    margin: 2rem 0;
+  }
+  .details-popup-container .details-popup .details .button-container {
+    position: initial;
+  }
 }
 
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 600px) {
   html {
     font-size: 45%;
+  }
+  header {
+    padding-bottom: 2rem;
   }
   svg {
     height: 60%;
@@ -670,16 +882,58 @@ nav ul a:hover {
   .intro-social a {
     margin: 2rem;
   }
-  .elena,
-  .travelly {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50rem;
-            flex: 1 1 50rem;
+  .all-projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .elena img,
-  .travelly img {
+  .all-projects .ongoing,
+  .all-projects .done {
     width: 100%;
-    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .all-projects .ongoing .projects,
+  .all-projects .done .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .all-projects .ongoing .projects .project-card,
+  .all-projects .done .projects .project-card {
+    height: 27rem;
+    width: 48rem;
   }
   form {
     padding: 0rem;
