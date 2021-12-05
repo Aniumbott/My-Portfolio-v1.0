@@ -3,10 +3,10 @@ footer {
   background: #000000;
   color: white;
   min-height: 10vh;
-  padding: 0% 5%;
+  padding: 0 5rem;
   @include flex(space-between, center, row);
   svg {
-    margin: 0 5rem;
+    margin: 0 0.8rem;
     height: 3rem;
     path {
       fill: #ffffff;

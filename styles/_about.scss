@@ -1,3 +1,168 @@
 main {
-  min-height: 90vh;
+  @include flex(center, flex-start, row);
+  height: 110vh;
+  .small-container {
+    height: 100%;
+    width: 25%;
+    background: #111111;
+    position: relative;
+    @include flex(flex-start, center, column);
+    .about-dp {
+      width: 100%;
+      padding-bottom: 3rem;
+      @include flex(center, center, row);
+      img {
+        width: 80%;
+        object-fit: cover;
+      }
+    }
+    .skills {
+      height: 100%;
+      width: 100%;
+      padding-bottom: 15rem;
+      @include flex(flex-start, center, column);
+      ul {
+        width: 90%;
+        @include flex(center, center, column);
+        lh {
+          p {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            color: $color3;
+            margin: 1rem 0;
+          }
+        }
+        li {
+          width: 100%;
+          margin: 0.5rem 0;
+          .skill-title {
+            width: 100%;
+            @include flex(space-between, center, row);
+            p,
+            span {
+              font-size: 1.5rem;
+              font-weight: 400;
+              color: $color3;
+              margin: 1rem 0;
+            }
+            span {
+              color: $color2;
+            }
+          }
+          hr {
+            height: 0.8rem;
+            border: none;
+            border-radius: 50px;
+            background: $color5;
+          }
+          #cpp {
+            background: linear-gradient(
+              to right,
+              $color2 0%,
+              $color2 90%,
+              $color5 90%,
+              $color5 100%
+            );
+          }
+          #dsa {
+            background: linear-gradient(
+              to right,
+              $color2 0%,
+              $color2 60%,
+              $color5 60%,
+              $color5 100%
+            );
+          }
+          #python {
+            background: linear-gradient(
+              to right,
+              $color2 0%,
+              $color2 95%,
+              $color5 95%,
+              $color5 100%
+            );
+          }
+          #html_css {
+            background: linear-gradient(
+              to right,
+              $color2 0%,
+              $color2 95%,
+              $color5 95%,
+              $color5 100%
+            );
+          }
+          #react_js {
+            background: linear-gradient(
+              to right,
+              $color2 0%,
+              $color2 85%,
+              $color5 85%,
+              $color5 100%
+            );
+          }
+        }
+      }
+    }
+    a {
+      position: absolute;
+      bottom: 0;
+      width: 15rem;
+      text-align: center;
+      margin-bottom: 5rem;
+      padding: 1rem;
+      font-size: 2rem;
+      background: $color5;
+      color: $color2;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        background: $color2;
+        color: $color5;
+      }
+    }
+  }
+  .big-container {
+    height: 100%;
+    width: 75%;
+    padding: 2rem;
+    @include flex(flex-start, flex-start, column);
+    h1 {
+      font-size: 2.5rem;
+      color: $color3;
+      margin: 1rem 0;
+    }
+    ul {
+      margin-left: 2rem;
+      list-style: disc;
+    }
+    p,
+    li {
+      font-size: 2rem;
+      margin: 1rem 0;
+      span {
+        color: $color3;
+        font-weight: 600;
+      }
+    }
+    li {
+      font-size: 1.5rem;
+    }
+    .perfomance-profiles,
+    .tools {
+      height: 5rem;
+      margin-bottom: 2rem;
+      @include flex(flex-start, center, row);
+      a {
+        height: 100%;
+        margin: 0rem 1rem;
+        img {
+          border-radius: 10px;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 }

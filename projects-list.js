@@ -83,5 +83,12 @@ const projectsList = [
       url: "https://aniumbott.github.io/Travely/",
       screenShot: "./img/Travely.png",
     },
+    {
+      name: "Department-Website",
+      repolink: "https://github.com/Aniumbott/CobWeb-Team-Syntax-Terminators",
+      dec: "A simple Electronincs Department website.",
+      url: "https://shantanuban09.github.io/CobWeb-Team-Syntax-Terminators/",
+      screenShot: "./img/department-website.png",
+    },
   ],
 ];

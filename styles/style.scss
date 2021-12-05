@@ -117,6 +117,17 @@ $color5: #e1e1e1;
       }
     }
   }
+  .about {
+    height: auto;
+    @include flex(center, center, column);
+    .small-container,
+    .big-container {
+      width: 100%;
+    }
+    .small-container {
+      padding: 0 4rem;
+    }
+  }
   form {
     padding: 0rem;
     width: 100%;
