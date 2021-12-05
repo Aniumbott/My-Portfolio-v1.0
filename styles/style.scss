@@ -111,6 +111,8 @@ $color5: #e1e1e1;
         .project-card {
           height: 27rem;
           width: 48rem;
+          max-width: 90vw;
+          @include flex(center, center, row);
         }
       }
     }

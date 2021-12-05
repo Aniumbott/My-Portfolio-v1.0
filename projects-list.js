@@ -15,7 +15,7 @@ const projectsList = [
   [
     {
       name: "My-Portfolio-v1.0",
-      repolink: "https://aniumbott.github.io/My-Portfolio-v1.0/",
+      repolink: "https://github.com/Aniumbott/My-Portfolio-v1.0",
       dec: "A simple website to showcase myself.",
       url: "https://aniumbott.github.io/My-Portfolio-v1.0/",
       screenShot: "./img/My-Portfolio-v1.0.png",
