@@ -43,7 +43,7 @@ $color5: #e1e1e1;
     padding: 0;
     padding-top: 10vh;
     .details-popup {
-      @include flex(center, center, column);
+      @include flex(center, flex-start, column);
       height: auto;
       width: auto;
       #details-screenshot {
@@ -54,9 +54,6 @@ $color5: #e1e1e1;
         width: 100%;
         max-width: 100%;
         margin: 2rem 0;
-        .button-container {
-          position: initial;
-        }
       }
     }
   }
