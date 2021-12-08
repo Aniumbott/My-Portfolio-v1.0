@@ -21,6 +21,13 @@ const projectsList = [
       screenShot: "./img/My-Portfolio-v1.0.png",
     },
     {
+      name: "Badge Generator",
+      repolink: "https://github.com/Aniumbott/Team-Dijkstra_Hackx",
+      dec: "An online tool for generating badges for collage students.",
+      url: "https://badge99.herokuapp.com/",
+      screenShot: "./img/badge-generator.png",
+    },
+    {
       name: "Vybe",
       repolink: "https://github.com/Aniumbott/Vybe",
       dec: "Its a simple online music player using React.JS",
