@@ -77,7 +77,7 @@ nav {
 }
 
 #glass {
-  animation: "glass-color" 2s ease infinite;
+  animation: "glass-color" 10s ease infinite;
 }
 
 #pc-logo {
@@ -92,19 +92,37 @@ nav {
 
 @keyframes glass-color {
   0% {
-    fill: #4285f4;
+    fill: #40aef2;
   }
-  25% {
-    fill: #34a853;
+  10% {
+    fill: #ffd400;
+  }
+  20% {
+    fill: #4f81c1;
+  }
+  30% {
+    fill: #ae0f0a;
+  }
+  40% {
+    fill: #f7f3e7;
   }
   50% {
-    fill: #fbbc05;
+    fill: #5b4538;
   }
-  75% {
-    fill: #ea4335;
+  60% {
+    fill: #070706;
+  }
+  70% {
+    fill: #f89f1b;
+  }
+  80% {
+    fill: #2fc362;
+  }
+  90% {
+    fill: #2c3454;
   }
   100% {
-    fill: #4285f4;
+    fill: #40aef2;
   }
 }
 
