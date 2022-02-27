@@ -16,9 +16,9 @@
     <br>
     <a href="https://aniumbott.github.io/My-Portfolio-v1.0/">View Demo</a>
     ·
-    <a href="https://aniumbott.github.io/My-Portfolio-v1.0/issues">Report Bug</a>
+    <a href="https://github.com/Aniumbott/My-Portfolio-v1.0/issues">Report Bug</a>
     ·
-    <a href="https://aniumbott.github.io/My-Portfolio-v1.0/issues">Request Feature</a>
+    <a href="https://github.com/Aniumbott/My-Portfolio-v1.0/issues">Request Feature</a>
   </p>
 </div>
 
