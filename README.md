@@ -43,7 +43,7 @@
 ## About The Project
 <br>
 <img width=1920 src="https://github.com/Aniumbott/My-Portfolio-v1.0/blob/master/projects-ss/My-Portfolio-v1.0.png"> 
-To make the procedure of creating badges by different university easier we can create a simple solution that can allow the registered universities and their student to automatically create the Badge and store it on the Database for Administration purposes.
+Its just a small portfolio where you can find my stats, projects, Social-Media links etc.
 
 
 ### Built With
