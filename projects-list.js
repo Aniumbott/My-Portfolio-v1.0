@@ -4,6 +4,13 @@
 const projectsList = [
   [
     {
+      name: "Sparsh",
+      repolink: "",
+      dec: "One of the Gujarat biggest Cultural Fest - Sparsh(SVNIT) Website",
+      url: "http://sparsh.vercel.app/",
+      screenShot: "./projects-ss/sparsh.png",
+    },
+    {
       name: "ChatUp",
       repolink: "https://github.com/Aniumbott/ChatUp",
       dec: "A servers based Chat app using React.",
@@ -19,6 +26,13 @@ const projectsList = [
       dec: "Its a simple design project of ScrollMagic and GSAP in JS.",
       url: "https://aniumbott.github.io/tree-shot/",
       screenShot: "./projects-ss/tree-shot.png",
+    },
+    {
+      name: "TraCon",
+      repolink: "https://github.com/Aniumbott/TraCon",
+      dec: "We built a web application for gym trainers to track their trainees' daily exercise using Camera tracking.",
+      url: "",
+      screenShot: "./projects-ss/tracon.png",
     },
     {
       name: "My-Portfolio-v1.0",
