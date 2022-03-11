@@ -94,7 +94,7 @@ const projectsList = [
       name: "Todo",
       repolink: "https://github.com/Aniumbott/Todo",
       dec: "It is a simple Todo list page which is helpful to mannage bunch of tasks.",
-      url: "https://aniumbott.github.io/Todo/",
+      url: "https://aniumbott.github.io/Todo-List/",
       screenShot: "./projects-ss/Todo-List.png",
     },
     {
