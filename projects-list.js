@@ -21,6 +21,13 @@ const projectsList = [
 
   [
     {
+      name: "Next-Todo",
+      repolink: "https://github.com/Aniumbott/next-todo",
+      dec: "A professional Todo List with NextJS with Rich Text Editor.",
+      url: "https://nxt-todo-list.vercel.app/",
+      screenShot: "./projects-ss/nxt-todo-list.png",
+    },
+    {
       name: "Tree-Shot",
       repolink: "https://github.com/Aniumbott/tree-shot",
       dec: "Its a simple design project of ScrollMagic and GSAP in JS.",
